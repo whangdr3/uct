@@ -42,7 +42,8 @@
 					echo "<td>".$row['email']."</td>";	
 					echo "<td>".$row['post']."</td>";
 					echo "<td class='text-center'>
-							<a  class='btn btn-primary' href=\"edit.php?id=$row[id]\">Update</a>
+							<a  class='btn btn-info' href=\"view.php?id=$row[id]\">View</a>
+							<a  class='btn btn-primary' href=\"edit.php?id=$row[id]\">Edit</a>
 							<a  class='btn btn-danger' href=\"delete.php?id=$row[id]\" onClick=\"return confirm('Are you sure you want to delete?')\">Delete</a></td>";					
 			      echo '</tr>';
 	

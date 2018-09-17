@@ -25,15 +25,13 @@
 		$fullname = sqlsrv_get_field( $stmt, 1);
 		$email = sqlsrv_get_field( $stmt, 2);
 		$post = sqlsrv_get_field( $stmt, 3);
-
-
 	}
 ?>
 
-
+<div>
 	<h1 class="pb-5">Update Post</h1>
 
-	<form action=<?php echo $_SERVER['PHP_SELF']; ?> method="POST">
+	<form action="edit" method="POST">
 		<div class="form-group">
 			<label class="font-weight-bold">ID :</label>
 			<span class="font-weight-bold" style="font-size: 1.5rem;"><?= $id; ?></span>
@@ -56,8 +54,12 @@
 		<input type="hidden" name="id" value="<?php echo $id; ?>">
 		<button type="submit" id="update" name="update" class="btn btn-success">Update</button>
 	</form>
+</div>
+<?php
 
 
+
+?>
 </div>
 </body>
 </html>
